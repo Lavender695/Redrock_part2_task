@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            background-color: rgb(37, 37, 59);
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-shadow: 2px 2px 8px rgba(225, 206, 37, 0.5), -2px -2px 8px rgba(82, 215, 255, 0.5);
+            position: relative;
+            bottom: 150px;
+            letter-spacing: 4px;
+        }
+
+        .searchContainer {
+            display: flex;
+            background-color: rgb(255, 255, 255, 0.1);
+            width: 450px;
+            height: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 130px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            height: 30px;
+            width: 400px;
+            outline: none;
+            font-size: 23px;
+            color: whitesmoke;
+            text-shadow: 2px 2px 8px rgba(225, 206, 37, 0.5), -2px -2px 8px rgba(82, 215, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="throttleContainer">
+        <h1>⭐我是节流的输入框</h1>
+        <div class="container">
+            <div class="searchContainer">
+                <input type="text" class="throttle">
+            </div>
+        </div>
+    </div>
+
+    <div class="debounceContainer">
+        <h1>⭐我是防抖的输入框</h1>
+        <div class="container">
+            <div class="searchContainer">
+                <input type="text" class="debounce">
+            </div>
+        </div>
+    </div>
+
+    <script src="debounce.js"></script>
+    <script src="throttle.js"></script>
+</body>
+
+</html>
